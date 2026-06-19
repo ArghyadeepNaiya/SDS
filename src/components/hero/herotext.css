@@ -3,12 +3,25 @@
     top: 300px;
     left: 400px;
 }
-
 @media (max-width: 1200px) {
     #welcomeMsg{
         position: absolute;
-        top: 50%;
+        top: 20%;
+        left: 30%;
+    }
+    #welcomeMsg h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    #welcomeMsg{
+        position: absolute;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    #welcomeMsg h1{
+        font-size: 30px;
     }
 }
