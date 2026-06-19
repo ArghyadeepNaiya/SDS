@@ -4,8 +4,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(39, 39, 39);
+    background-color: rgba(39, 39, 39, 0.244);
     backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px 70px ;
     position: fixed;
     width: 100%;
@@ -62,6 +63,12 @@
     background: none;
     border: none;
     cursor: pointer;
+}
+@media (max-width: 1200px) {
+    #navbar {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 600px) {
