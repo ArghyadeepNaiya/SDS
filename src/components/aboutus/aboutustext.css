@@ -46,15 +46,15 @@ h1{
     }
     .mask{
         position: relative;
-        padding: 30px;
         mask-image: none;
         background: none;
         height: auto;
-        width: auto;
+        width: 100vw;
     }
     .mask h1{
-        font-size: 17px;
+        font-size: 15px;
         color: rgb(255, 255, 255);
+        padding:none;
     }
     .normal h1{
         font-size: 25px;

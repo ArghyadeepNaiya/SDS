@@ -9,7 +9,7 @@ const AboutUs = () => {
              text-6xl text-white'
              initial={{opacity:0,y:0,backgroundColor:"none",}}
              whileInView={{opacity:1,y:0,backgroundColor:"rgb(218,171,0)",color:"rgb(0,0,0)"}}
-             transition={{ease:"backout",duration:0.7}} id='about'>
+             transition={{ease:"backout",duration:1.5}} id='about'>
                 About Us
             </motion.h1>
             <AboutUsText normal={"Society for Data Science is BIT Mesra's first student-run, not-for-profit organization focused on data science and its interdisciplinary applications."}

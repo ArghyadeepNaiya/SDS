@@ -3,14 +3,24 @@
     top: 300px;
     left: 400px;
 }
+#para{
+    position: relative;
+    padding-top: 30px;
+}
 @media (max-width: 1200px) {
     #welcomeMsg{
         position: absolute;
         top: 20%;
         left: 30%;
+        backdrop-filter: blur(1px);
     }
     #welcomeMsg h1{
         font-size: 40px;
+    }
+    #para{
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.998);
+        font-size: 20px;
+        backdrop-filter: blur(1px);
     }
 }
 
