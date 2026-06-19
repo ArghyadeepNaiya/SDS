@@ -4,10 +4,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
-    padding: 10px 40px ;
+    background-color: rgb(39, 39, 39);
+    padding: 10px 70px ;
     position: sticky;
     top: 0;
+    color: white;
     z-index: 100;
     text-align: center;
     font-size: 20px;
@@ -21,6 +22,37 @@
 }
 
 #links li {
+    padding: 10px 10px;
     display: inline;
     cursor: pointer;
+    border-radius: 20px;
+}
+
+#links li:hover {
+    background-color: rgb(218, 171, 0);
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+}
+#title:hover {
+    color: rgb(218, 171, 0);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+#toggle img{
+    height: 30px;
+    width: 30px;
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    #links {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
