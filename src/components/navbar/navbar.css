@@ -34,10 +34,14 @@
     transition: 0.3s ease-in-out;
 }
 #title:hover {
-    color: rgb(218, 171, 0);
+    color: rgb(0, 87, 218);
     transition: 0.3s ease-in-out;
     cursor: pointer;
 
+}
+#toggle{
+    display: none;
+    cursor: pointer;
 }
 
 #toggle img{
@@ -45,14 +49,43 @@
     width: 30px;
 }
 
+#toggle {
+    display: none; /* Hide button on desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 @media (max-width: 600px) {
     #navbar {
         flex-direction: column;
-        padding: 10px 20px;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    #toggle {
+        display: block; /* Show button on mobile */
+        position: absolute;
+        top: 15px;
+        right: 20px;
     }
 
     #links {
+        display: none; /* Hide links by default on mobile */
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* This shows the links when the active class is added by React */
+    #links.active {
+        display: flex; 
+    }
+    #links.active li:hover {
+        background-color: rgb(218, 171, 0);
+        color: rgb(0, 0, 0);
+        transition: 0.3s ease-in-out;
     }
 }
