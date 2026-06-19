@@ -11,10 +11,10 @@ import { Float } from '@react-three/drei'
 const Hero = () => {
     const isMobile=useMediaQuery({maxWidth:853})
   return (
-    <div>
+    <div className="relative w-full h-screen">
         <Herotext>
         </Herotext>
-        <figure className='absolute inset-0' style={{
+        <figure className='absolute inset-0 -z-10' style={{
             width:"100vw", height:"100vh"
         }}>
             <Canvas camera={{position:[0,1,3]}}>
