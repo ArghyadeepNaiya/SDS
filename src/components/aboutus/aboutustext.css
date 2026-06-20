@@ -9,7 +9,6 @@
     padding: 20px;
     cursor: none;
     transition: all 0.3s ease-in-out;
-    border-bottom: 2px solid rgb(218,171,0);
 }
 .mask{
     position: absolute;

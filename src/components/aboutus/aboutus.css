@@ -5,6 +5,12 @@
     margin-top: 40px;
     z-index: 1;
 }
+.vr{
+    width: 2px; height: 100px; background-color: rgb(255, 212, 55); border: none;
+}
+.hr{
+    width: 80%; height: 2px; background-color: rgb(255, 212, 55); border: none;
+}
 
 
 @media (max-width: 768px) {
@@ -16,6 +22,14 @@
         position: relative;
         height: 150vh;
     }
- 
+    .vr{
+        display: none;
+    width: 2px; height: 100px; background-color: white; border: none;
+}
+
+.hr{
+    display: none;
+    width: 80%; height: 2px; background-color: rgb(255, 212, 55); border: none;
+}
     
 }

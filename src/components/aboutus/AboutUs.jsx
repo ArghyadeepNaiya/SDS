@@ -19,33 +19,54 @@ const AboutUs = () => {
             <div className='relative top-30 h-150 flex flex-col md:flex-row justify-center 
             items-start w-full max-w-7xl mx-auto gap-10 px-10 my-10'
             >
-                <div className='flex flex-col flex-1' id='insider'>
-                    <h3 className='text-amber-400 text-4xl'>
+                <div className='flex flex-col flex-1'>
+                    <motion.h3 className='text-amber-400 text-4xl'
+                    initial={{opacity:0,x:-30}}
+                    whileInView={{opacity:1,x:0}}
+                    transition={{ease:"easeIn",duration:1}}>
                         Define
-                    </h3>
-                    <p className='text-neutral-400 text-2xl'>
+                    </motion.h3>
+                    <motion.p className='text-neutral-400 text-2xl'
+                    initial={{opacity:0,x:0}}
+                    whileInView={{opacity:1,x:0}}
+                    transition={{ease:"easeIn",duration:1.5}}>
                         Data science is a "concept to unify statistics, data 
                         analysis, machine learning and their related methods" in 
                          order to "understand and analyze actual phenomena" with data. 
                           It employs techniques and theories drawn from many fields within 
                            the context of mathematics, statistics, computer science, and 
                             information science. 
-                    </p>
+                    </motion.p>
                 </div>
+                <motion.hr className='vr'
+                initial={{opacity:0,height:0, width:0,border:"none"}}
+                whileInView={{opacity:1,height:400,width:2,border:"none"}}
+                transition={{ease:"easeOut",duration:1.5}}></motion.hr>
                 <div className='flex flex-col flex-1'>
-                    <h3 className='text-amber-400 text-4xl'>
+                    <motion.h3 className='text-amber-400 text-4xl'
+                    initial={{opacity:0,x:-30}}
+                    whileInView={{opacity:1,x:0}}
+                    transition={{ease:"easeIn",duration:1}}>
                         Build
-                    </h3>
-                    <p className='text-neutral-400 text-2xl'>
+                    </motion.h3>
+                    <motion.p className='text-neutral-400 text-2xl'
+                    initial={{opacity:0,x:0}}
+                    whileInView={{opacity:1,x:0}}
+                    transition={{ease:"easeIn",duration:1.5}}>
                         You are going to need more than technical knowledge 
                          to succeed as a data scientist. Build a Career in 
                           Data Science teaches you what school leaves out, from 
                            how  to land your first job to the lifecycle 
                             of a data science project, and even how to become a manager. 
-                    </p>
+                    </motion.p>
                 </div>
 
             </div>
+            <motion.hr className='hr'
+            initial={{opacity:0,height:0, width:0,border:"none"}}
+                whileInView={{opacity:1,height:2,width:"80%",border:"none"}}
+                transition={{ease:"easeOut",duration:1.5}}
+            ></motion.hr>
             <AboutUsText normal={"We have everything you need to launch and to grow your academic environment."}
             mask={"The Society for Data Science is a non-profit society of data science enthusiasts that serves our members, improving the data science profession, eliminating bias and enhancing diversity, and advancing ethical data science throughout the world."}
             >
@@ -53,44 +74,75 @@ const AboutUs = () => {
             </AboutUsText>
             <div className='relative top-30 h-150 flex flex-col md:flex-row justify-center items-start w-full max-w-7xl mx-auto gap-10 px-10 my-10'>
                 <div className='flex flex-col flex-1'>
-                    <h3 className='text-amber-400 text-4xl'>
+                    <motion.h3 className='text-amber-400 text-4xl'
+                    initial={{opacity:0,x:-30}}
+                    whileInView={{opacity:1,x:0}}
+                    transition={{ease:"easeIn",duration:1}}>
                         Define
-                    </h3>
-                    <p className='text-neutral-400 text-2xl'>
+                    </motion.h3>
+                    <motion.p className='text-neutral-400 text-2xl'
+                    initial={{opacity:0,x:0}}
+                    whileInView={{opacity:1,x:0}}
+                    transition={{ease:"easeIn",duration:1.5}}>
                         Data science is a "concept to unify statistics, data
                         analysis, machine learning and their related methods" in 
                          order to "understand and analyze actual phenomena" with data. 
                           It employs techniques and theories drawn from many fields within 
                            the context of mathematics, statistics, computer science, and 
                             information science. 
-                    </p>
+                    </motion.p>
                 </div>
+                <motion.hr className='vr'
+                initial={{opacity:0,height:0, width:0,border:"none"}}
+                whileInView={{opacity:1,height:400,width:2,border:"none"}}
+                transition={{ease:"easeOut",duration:1.5}}></motion.hr>
                 <div className='flex flex-col flex-1'>
-                    <h3 className='text-amber-400 text-4xl'>
+                    <motion.h3 className='text-amber-400 text-4xl'
+                    initial={{opacity:0,x:-30}}
+                    whileInView={{opacity:1,x:0}}
+                    transition={{ease:"easeIn",duration:1}}>
                         Build
-                    </h3>
-                    <p className='text-neutral-400 text-2xl'>
+                    </motion.h3>
+                    <motion.p className='text-neutral-400 text-2xl'
+                    initial={{opacity:0,x:0}}
+                    whileInView={{opacity:1,x:0}}
+                    transition={{ease:"easeIn",duration:1}}>
                         You are going to need more than technical knowledge 
                          to succeed as a data scientist. Build a Career in 
                           Data Science teaches you what school leaves out, from 
                            how  to land your first job to the lifecycle 
                             of a data science project, and even how to become a manager. 
-                    </p>
+                    </motion.p>
                 </div>
+                <motion.hr className='vr'
+                initial={{opacity:0,height:0, width:0,border:"none"}}
+                whileInView={{opacity:1,height:400,width:2,border:"none"}}
+                transition={{ease:"easeOut",duration:1.5}}></motion.hr>
                 <div className='flex flex-col flex-1'>
-                    <h3 className='text-amber-400 text-4xl'>
+                    <motion.h3 className='text-amber-400 text-4xl'
+                    initial={{opacity:0,x:-30}}
+                    whileInView={{opacity:1,x:0}}
+                    transition={{ease:"easeIn",duration:1}}>
                         Build
-                    </h3>
-                    <p className='text-neutral-400 text-2xl'>
+                    </motion.h3>
+                    <motion.p className='text-neutral-400 text-2xl'
+                    initial={{opacity:0,x:0}}
+                    whileInView={{opacity:1,x:0}}
+                    transition={{ease:"easeIn",duration:1.5}}>
                         You are going to need more than technical knowledge 
                          to succeed as a data scientist. Build a Career in 
                           Data Science teaches you what school leaves out, from 
                            how  to land your first job to the lifecycle
                             of a data science project, and even how to become a manager. 
-                    </p>
+                    </motion.p>
                 </div>
 
             </div>
+            <motion.hr className='hr'
+            initial={{opacity:0,height:0, width:0,border:"none"}}
+                whileInView={{opacity:1,height:2,width:"80%",border:"none"}}
+                transition={{ease:"easeOut",duration:1.5}}
+            ></motion.hr>
         </div>
     )
 }
