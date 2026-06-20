@@ -1,17 +1,27 @@
 #container{
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20vh;
     height: 100vh;
+}
+#info{
+    width: 40vh;
 }
 #title{
     margin-top: 60px;
     margin-bottom: 40px;
 }
-
+#info label{
+    font-size: 17px;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+}
 #info input{
     display: flex;
     flex-direction: column;
@@ -47,7 +57,9 @@
     font-size: 20px;
     font-weight: bold;
     height: 60px;
-    width: 400px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 #info input:focus{

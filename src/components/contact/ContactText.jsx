@@ -6,18 +6,42 @@ import instaIcon from '../../assets/icons/instagram.svg'
 import {motion} from 'motion/react'
 
 const ContactText = () => {
-  return (
+  return (<>
     <div id='container'>
-        <h1 className='text-amber-400 text-4xl' id='title'>
-            Contact Us
-        </h1>
+        <div id='contact'>
+            <a href=''>E-mail Us From here</a>
+            <div id='socials'>
+                <div id='address'></div>
+                <div id='links'></div>
+            </div>
+
+        </div>
+        
         <form className='text-white' id='info'>
+            <motion.h1 className='text-amber-400 text-4xl' id='title'
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{ease:"circleOut",duration:1.5}}>
+            Get In Touch
+        </motion.h1>
+            <div id='#info-box'>
+                <label className='text-neutral-400' id='msg'>Enter Your Full Name</label>
+                <input type='text' className='text-white' placeholder='Your Name' required></input>
+            </div>
             
-            <input type='text' className='text-white' placeholder='Your Name' required></input>
-            <input type='email' className='text-white' placeholder='E-mail'></input>
-            <textarea type='textbox' className='text-white' placeholder='More information'></textarea>
+            <div id='#info-box'>
+                <label className='text-neutral-400'>Enter Your Email Address</label>
+                <input type='email' className='text-white' placeholder='E-mail'></input>
+            </div>
+            
+            <div id='#info-box'>
+                <label className='text-neutral-400'>Enter Your Message</label>
+                <textarea type='textbox' className='text-white' placeholder='More information'></textarea>
+            </div>
+            
             <button type='submit' id='submit'>Submit</button>
         </form>
+            </div>
         <footer id='footer'>
 
             
@@ -52,7 +76,7 @@ const ContactText = () => {
                 transition={{ease:"circIn",duration:0.1}}>Terms of Use</motion.a></li>
             </ul>
         </footer>
-    </div>
+        </>
   )
 }
 
