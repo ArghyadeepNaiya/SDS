@@ -20,7 +20,7 @@ const AboutUsText = ({mask,normal}) => {
         });
     };
 
-    const size = isHovered ? '450' : '100';
+    const size = isHovered ? '550' : '100';
 
   return (
     <div className="container" ref={containerRef} onMouseMove={handleMouseMove}>

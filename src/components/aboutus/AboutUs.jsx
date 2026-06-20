@@ -16,12 +16,12 @@ const AboutUs = () => {
                 mask={"Since our founding in 2019, we have united students from a wide range of disciplines behind our shared passion for all things data. Our mission is to foster a strong data science community on campus. Each semester, we focus on: developing educational learning experiences like our technical workshops and decal course to expand data science education on campus, hosting professional events for students to connect with industry leaders and grow their network, and conducting analytics consulting projects to help members gain experience and make an impact. Our program provides over a hundred students each semester with mentorship and data science skills through working in teams on a tangible group project. We aim to build an inclusive and accessible community where students of all levels and backgrounds can dive into the world of data science."}>
 
             </AboutUsText>
-            <div id='container'>
-                <div id='insider'>
-                    <h3>
+            <div className='flex flex-col md:flex-row justify-center items-start w-full max-w-7xl mx-auto gap-10 px-10 my-10'>
+                <div className='flex flex-col flex-1'>
+                    <h3 className='text-amber-400 text-4xl'>
                         Define
                     </h3>
-                    <p>
+                    <p className='text-neutral-400 text-2xl'>
                         Data science is a "concept to unify statistics, data <br></br>
                         analysis, machine learning and their related methods" in <br></br>
                          order to "understand and analyze actual phenomena" with data. <br></br>
@@ -30,11 +30,11 @@ const AboutUs = () => {
                             information science. 
                     </p>
                 </div>
-                <div id='insider'>
-                    <h3>
+                <div className='flex flex-col flex-1'>
+                    <h3 className='text-amber-400 text-4xl'>
                         Build
                     </h3>
-                    <p>
+                    <p className='text-neutral-400 text-2xl'>
                         You are going to need more than technical knowledge <br></br>
                          to succeed as a data scientist. Build a Career in <br></br>
                           Data Science teaches you what school leaves out, from <br></br>
@@ -49,12 +49,12 @@ const AboutUs = () => {
             >
 
             </AboutUsText>
-            <div id='container'>
-                <div id='insider'>
-                    <h3>
+            <div className='flex flex-col md:flex-row justify-center items-start w-full max-w-7xl mx-auto gap-10 px-10 my-10'>
+                <div className='flex flex-col flex-1'>
+                    <h3 className='text-amber-400 text-4xl'>
                         Define
                     </h3>
-                    <p>
+                    <p className='text-neutral-400 text-2xl'>
                         Data science is a "concept to unify statistics, data <br></br>
                         analysis, machine learning and their related methods" in <br></br>
                          order to "understand and analyze actual phenomena" with data. <br></br>
@@ -63,11 +63,11 @@ const AboutUs = () => {
                             information science. 
                     </p>
                 </div>
-                <div id='insider'>
-                    <h3>
+                <div className='flex flex-col flex-1'>
+                    <h3 className='text-amber-400 text-4xl'>
                         Build
                     </h3>
-                    <p>
+                    <p className='text-neutral-400 text-2xl'>
                         You are going to need more than technical knowledge <br></br>
                          to succeed as a data scientist. Build a Career in <br></br>
                           Data Science teaches you what school leaves out, from <br></br>
@@ -75,11 +75,11 @@ const AboutUs = () => {
                             of a data science project, and even how to become a manager. 
                     </p>
                 </div>
-                <div id='insider'>
-                    <h3>
+                <div className='flex flex-col flex-1'>
+                    <h3 className='text-amber-400 text-4xl'>
                         Build
                     </h3>
-                    <p>
+                    <p className='text-neutral-400 text-2xl'>
                         You are going to need more than technical knowledge <br></br>
                          to succeed as a data scientist. Build a Career in <br></br>
                           Data Science teaches you what school leaves out, from <br></br>

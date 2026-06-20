@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 70vh;
+    min-height: 70vh;
     padding: 20px;
     cursor: none;
     transition: all 0.3s ease-in-out;
@@ -25,7 +25,10 @@
     color: black;
 }
 .normal{
-    width: 100vw
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .mask h1{
@@ -36,7 +39,7 @@
 .normal h1{
     color: white;
     font-size: 70px;
-    padding: 180px;
+    padding: 100px;
 }
 h1{
     cursor: none;
