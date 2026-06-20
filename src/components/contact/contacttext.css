@@ -56,3 +56,8 @@
     flex-direction: row;
     gap: 20px;
 }
+#icons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

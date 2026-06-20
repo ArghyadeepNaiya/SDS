@@ -17,10 +17,10 @@ const ContactText = () => {
         <footer id='footer'>
 
             
-            <ul id='icons'>
-                <li><img></img></li>
-                <li><img></img></li>
-                <li><img></img></li>
+            <ul id='icons' className='text-neutral-400'>
+                <li><a>linkedin<img></img></a></li>
+                <li><a>insta<img></img></a></li>
+                <li><a>github<img></img></a></li>
             </ul>
             <ul id='copyright'>
                 <li className='text-neutral-400 text-2xl'>&copy;</li>
