@@ -17,9 +17,15 @@ const ContactText = () => {
         <footer id='footer'>
 
             <ul id='copyright'>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li className='text-neutral-400 text-2xl'>&copy;</li>
+                <li className='text-neutral-400 text-1xl'>2026</li>
+                <li className='text-neutral-400 text-1xl'>All rights reserved</li>
+            </ul>
+            <ul>
+
+            </ul>
+            <ul>
+                
             </ul>
         </footer>
 
