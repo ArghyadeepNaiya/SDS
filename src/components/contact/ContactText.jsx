@@ -1,5 +1,9 @@
 import React from 'react'
 import './contacttext.css'
+import gitIcon from '../../assets/icons/github.svg'
+import linkedinIcon from '../../assets/icons/linkedin.svg'
+import instaIcon from '../../assets/icons/instagram.svg'
+import {motion} from 'motion/react'
 
 const ContactText = () => {
   return (
@@ -18,9 +22,19 @@ const ContactText = () => {
 
             
             <ul id='icons' className='text-neutral-400'>
-                <li><a>linkedin<img></img></a></li>
-                <li><a>insta<img></img></a></li>
-                <li><a>github<img></img></a></li>
+                <li><a><motion.img src={gitIcon} width="20" height="20" id='icon'
+                style={{background:"#a1a1a1"}}
+                whileHover={{background:"rgb(218,171,0)"}}
+                transition={{ease:"circIn",duration:0.1}}
+                ></motion.img></a></li>
+                <li><a><motion.img src={linkedinIcon} width="20" height="20" id='icon' 
+                style={{background:"#a1a1a1"}}
+                whileHover={{background:"rgb(218,171,0)"}}
+                transition={{ease:"circIn",duration:0.1}}></motion.img></a></li>
+                <li><a><motion.img src={instaIcon} width="20" height="20" id='icon' 
+                style={{background:"#a1a1a1"}}
+                whileHover={{background:"rgb(218,171,0)"}}
+                transition={{ease:"circIn",duration:0.1}}></motion.img></a></li>
             </ul>
             <ul id='copyright'>
                 <li className='text-neutral-400 text-2xl'>&copy;</li>
