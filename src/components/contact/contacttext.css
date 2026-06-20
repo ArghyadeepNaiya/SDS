@@ -1,15 +1,14 @@
 #container{
     position: relative;
-    bottom: -100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    height: 50vh;
+    height: 100vh;
 }
 #title{
-    margin: top 60px;
+    margin-top: 60px;
     margin-bottom: 40px;
 }
 
@@ -18,17 +17,46 @@
     flex-direction: column;
     height: 60px;
     width: 400px;
-    border: 2px solid rgb(218, 171, 0);
+    background-color: rgb(38, 35, 50);
+    color:rgb(255,212,55);
     margin-bottom: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
+    font-size: 20px;
     text-align: center;
     padding: 10px;
     overflow: hidden;
 }
+#info textarea{
+    display: flex;
+    flex-direction: column;
+    height:200px;
+    width: 400px;
+    background-color: rgb(38, 35, 50);
+    color:rgb(255,212,55);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    resize: none;
+}
+#submit{
+    background-color: rgb(218, 171, 0);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 60px;
+    width: 400px;
+}
 
 #info input:focus{
     outline: none;
-    border: 2px solid rgb(255, 212, 55);
+    border: 1px solid rgb(59, 55, 77);
+}
+#info textarea:focus{
+    outline: none;
+    border: 1px solid rgb(59, 55, 77);
 }
 #copyright{
     display: flex;
