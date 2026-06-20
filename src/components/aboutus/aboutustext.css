@@ -6,6 +6,7 @@
     align-items: center;
     flex-direction: column;
     height: 70vh;
+    padding: 20px;
     cursor: none;
     transition: all 0.3s ease-in-out;
     border-bottom: 2px solid rgb(218,171,0);
@@ -64,10 +65,11 @@ h1{
     .mask h1{
         font-size: 15px;
         color: rgb(255, 255, 255);
-        padding:none;
+        padding:10px;
     }
     .normal h1{
         font-size: 25px;
         color: rgb(0, 0, 0);
+        padding:10px;
     }
 }
