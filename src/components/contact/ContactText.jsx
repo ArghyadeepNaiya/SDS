@@ -12,7 +12,7 @@ const ContactText = () => {
             <input type='textbox' className='text-white' placeholder='Your Name'></input>
             <input type='textbox' className='text-white' placeholder='E-mail'></input>
             <input type='textbox' className='text-white' placeholder='More information'></input>
-            <input type='submit' placeholder='Submit'></input>
+            <input type='submit' placeholder='Submit' className='bg-amber-400 text-black text-2xl font-medium'></input>
         </form>
         <footer id='footer'>
 
@@ -25,7 +25,7 @@ const ContactText = () => {
 
             </ul>
             <ul>
-                
+
             </ul>
         </footer>
 
