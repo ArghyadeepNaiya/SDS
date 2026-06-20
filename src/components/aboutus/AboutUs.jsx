@@ -6,10 +6,10 @@ const AboutUs = () => {
     return (
         <div className='flex flex-col items-center justify-center w-full py-20'>
             <motion.h1 className='flex justify-center
-             text-6xl text-white'
-             initial={{opacity:0,y:0,backgroundColor:"none",}}
+             text-4xl text-white'
+             initial={{opacity:0,y:40,backgroundColor:"none",}}
              whileInView={{opacity:1,y:0,backgroundColor:"rgb(218,171,0)",color:"rgb(0,0,0)"}}
-             transition={{ease:"backout",duration:1.5}} id='about'>
+             transition={{ease:"backout",duration:1}} id='about'>
                 About Us
             </motion.h1>
             <AboutUsText normal={"Society for Data Science is BIT Mesra's first student-run, not-for-profit organization focused on data science and its interdisciplinary applications."}
