@@ -42,8 +42,14 @@ const ContactText = () => {
                 <li className='text-neutral-400 text-1xl'>All rights reserved</li>
             </ul>
             <ul id='legal'>
-                <li><a className='text-1xl text-neutral-400'>Privacy</a></li>
-                <li><a className='text-1xl text-neutral-400'>Terms of Use</a></li>
+                <li><motion.a className='text-1xl text-neutral-400'
+                style={{color:"#a1a1a1"}}
+                whileHover={{color:"rgb(218,171,0)"}}
+                transition={{ease:"circIn",duration:0.1}}>Privacy</motion.a></li>
+                <li><motion.a className='text-1xl text-neutral-400'
+                style={{color:"#a1a1a1"}}
+                whileHover={{color:"rgb(218,171,0)"}}
+                transition={{ease:"circIn",duration:0.1}}>Terms of Use</motion.a></li>
             </ul>
         </footer>
     </div>

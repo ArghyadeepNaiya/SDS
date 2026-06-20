@@ -56,8 +56,14 @@
     flex-direction: row;
     gap: 20px;
 }
+#legal li a{
+    cursor:pointer;
+}
 #icons{
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+#icons li a img{
+    cursor:pointer;
 }
