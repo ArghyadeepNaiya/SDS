@@ -16,19 +16,22 @@ const ContactText = () => {
         </form>
         <footer id='footer'>
 
+            
+            <ul id='icons'>
+                <li><img></img></li>
+                <li><img></img></li>
+                <li><img></img></li>
+            </ul>
             <ul id='copyright'>
                 <li className='text-neutral-400 text-2xl'>&copy;</li>
                 <li className='text-neutral-400 text-1xl'>2026</li>
                 <li className='text-neutral-400 text-1xl'>All rights reserved</li>
             </ul>
-            <ul>
-
-            </ul>
-            <ul>
-
+            <ul id='legal'>
+                <li><a className='text-1xl text-neutral-400'>Privacy</a></li>
+                <li><a className='text-1xl text-neutral-400'>Terms of Use</a></li>
             </ul>
         </footer>
-
     </div>
   )
 }
