@@ -8,6 +8,7 @@
     height: 70vh;
     cursor: none;
     transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid rgb(218,171,0);
 }
 .mask{
     position: absolute;
@@ -22,14 +23,19 @@
     justify-content: center;
     color: black;
 }
+.normal{
+    width: 100vw
+}
+
 .mask h1{
     color: rgb(0, 0, 0);
     font-size: 35px;
-    padding:60px;
+    padding:180px;
 }
 .normal h1{
     color: white;
     font-size: 70px;
+    padding: 180px;
 }
 h1{
     cursor: none;
