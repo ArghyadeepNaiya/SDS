@@ -29,7 +29,7 @@ const Herotext = () => {
                 >
                     We <FlipWords words={words}></FlipWords>
                 </motion.h1>
-                <motion.p className='relative mt-12 p-4 text-3xl text-neutral-500'
+                <motion.p className='relative mt-12 p-4 text-3xl text-neutral-400'
                     initial={{ opacity: 0, y: -20, }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.9 }}

@@ -27,11 +27,16 @@
 @media (max-width: 600px) {
     #welcomeMsg{
         position: absolute;
-        top: 30%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     #welcomeMsg h1{
         font-size: 30px;
+    }
+    #para{
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.998);
+        font-size: 20px;
+        backdrop-filter: blur(1px);
     }
 }

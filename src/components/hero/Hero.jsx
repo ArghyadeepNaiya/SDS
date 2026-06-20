@@ -6,7 +6,7 @@ import { useMediaQuery } from 'react-responsive'
 import { motion } from 'motion/react'
 import { easing } from 'maath'
 import { Float } from '@react-three/drei'
-
+import './hero.css'
 
 const Hero = () => {
     const isMobile=useMediaQuery({maxWidth:853})
@@ -14,7 +14,7 @@ const Hero = () => {
     <div className="relative w-full h-screen">
         <Herotext>
         </Herotext>
-        <figure className='absolute inset-0 -z-10' style={{
+        <figure className='absolute inset-0 z-10' id='figure' style={{
             width:"100vw", height:"100vh"
         }}>
             <Canvas camera={{position:[0,1,3]}}>
