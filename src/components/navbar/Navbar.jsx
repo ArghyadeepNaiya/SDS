@@ -16,7 +16,7 @@ const Navbar = () => {
         </div>
         
         
-        {/* We add an 'active' class when toggle is true */}
+        
         <ul id="links" className={toggle ? "active" : ""}>
             <li><Link to='/'>Home</Link></li>
             <li><a href='#about'>About Us</a></li>
@@ -25,7 +25,7 @@ const Navbar = () => {
         </ul>
         
         <button onClick={() => setToggle(!toggle)} id='toggle'>
-            {/* Swap between menu and close icons */}
+            
             <img src={toggle ? closeImg : menuImg} alt='Menu' width="28" height="28"/>
         </button>
     </div>
