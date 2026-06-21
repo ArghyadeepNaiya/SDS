@@ -31,7 +31,7 @@ const AboutUs = () => {
                         transition={{ ease: "easeIn", duration: 1 }}>
                         Define
                     </motion.h3>
-                    <motion.p className='text-neutral-400 text-2xl md:text-sm'
+                    <motion.p className='text-neutral-400 text-2xl md:text-1xl'
                         initial={{ opacity: 0, x: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ ease: "easeIn", duration: 1.5 }}>
@@ -54,7 +54,7 @@ const AboutUs = () => {
                         transition={{ ease: "easeIn", duration: 1 }}>
                         Build
                     </motion.h3>
-                    <motion.p className='text-neutral-400 text-2xl md:text-sm'
+                    <motion.p className='text-neutral-400 text-2xl md:text-1xl'
                         initial={{ opacity: 0, x: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ ease: "easeIn", duration: 1.5 }}>
@@ -85,7 +85,7 @@ const AboutUs = () => {
                         transition={{ ease: "easeIn", duration: 1 }}>
                         Workshops
                     </motion.h3>
-                    <motion.p className='text-neutral-400 text-2xl md:text-sm'
+                    <motion.p className='text-neutral-400 text-2xl md:text-1xl'
                         initial={{ opacity: 0, x: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ ease: "easeIn", duration: 1.5 }}>
@@ -103,7 +103,7 @@ const AboutUs = () => {
                         transition={{ ease: "easeIn", duration: 1 }}>
                         Projects
                     </motion.h3>
-                    <motion.p className='text-neutral-400 text-2xl md:text-sm'
+                    <motion.p className='text-neutral-400 text-2xl md:text-1xl'
                         initial={{ opacity: 0, x: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ ease: "easeIn", duration: 1 }}>
@@ -121,7 +121,7 @@ const AboutUs = () => {
                         transition={{ ease: "easeIn", duration: 1 }}>
                         Open Source
                     </motion.h3>
-                    <motion.p className='text-neutral-400 text-2xl md:text-sm'
+                    <motion.p className='text-neutral-400 text-2xl md:text-1xl'
                         initial={{ opacity: 0, x: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ ease: "easeIn", duration: 1.5 }}>

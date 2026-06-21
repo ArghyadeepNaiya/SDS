@@ -14,8 +14,11 @@
 .hr{
     width: 80%; height: 2px; background-color: rgb(255, 212, 55); border: none;
 }
-
-
+@media (max-width: 1200px) {
+    p{
+        font-size: 20px;
+    }
+}
 @media (max-width: 768px) {
     #about{
         font-size: 20px;
@@ -33,6 +36,12 @@
 .hr{
     display: none;
     width: 80%; height: 2px; background-color: rgb(255, 212, 55); border: none;
+}
+h3{
+    font-size: 20px;
+}
+p{
+    font-size: 15px;
 }
     
 }
