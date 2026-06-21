@@ -21,7 +21,7 @@ const AboutUs = () => {
                 mask={"Since our founding in 2019, we have united students from a wide range of disciplines behind our shared passion for all things data. Our mission is to foster a strong data science community on campus. Each semester, we focus on: developing educational learning experiences like our technical workshops and decal course to expand data science education on campus, hosting professional events for students to connect with industry leaders and grow their network, and conducting analytics consulting projects to help members gain experience and make an impact. Our program provides over a hundred students each semester with mentorship and data science skills through working in teams on a tangible group project. We aim to build an inclusive and accessible community where students of all levels and backgrounds can dive into the world of data science."}>
 
             </AboutUsText>
-            <div className='relative top-30 flex flex-col md:flex-row justify-center 
+            <div className='relative top-30 h-150 flex flex-col md:flex-row justify-center 
             items-start w-full max-w-7xl mx-auto gap-10 px-10 my-10'
             >
                 <div className='flex flex-col flex-1'>
@@ -77,7 +77,7 @@ const AboutUs = () => {
             >
 
             </AboutUsText>
-            <div className='relative top-30 flex flex-col md:flex-row justify-center items-start w-full max-w-7xl mx-auto gap-10 px-10 my-10'>
+            <div className='relative top-30 h-150 flex flex-col md:flex-row justify-center items-start w-full max-w-7xl mx-auto gap-10 px-10 my-10'>
                 <div className='flex flex-col flex-1'>
                     <motion.h3 className='text-amber-400 text-4xl'
                         initial={{ opacity: 0, x: -30 }}

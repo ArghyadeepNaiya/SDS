@@ -139,13 +139,35 @@
 }
 @media screen and (max-width: 1300px) {
     #container{
-        margin-top: 80px;
-        height: auto;
+        position: relative;
+        margin-top: 20vh;
+        height: 100vh;
         flex-direction: column;
         padding: 10vh;
     }
     #socials{
         height: auto;
+    }
+    #address h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #address p{
+        font-size: 20px;
+    }
+    #c-links h1{
+        font-size: 30px;
+    }
+    #inner-link{
+        text-align: center;
+        align-items: center;
+    }
+    #inner-link img{
+        height: 15px;
+        width: 20px;
+    }
+    #inner-link a{
+        font-size: 20px;
     }
     #info{
         height: auto;
@@ -162,5 +184,73 @@
         flex-direction: column;
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #container{
+        position: relative;
+        margin-top: 30vh;
+        height: 100vh;
+        flex-direction: column;
+        padding: 10vh;
+    }
+    #socials{
+        height: auto;
+    }
+    #address h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #address p{
+        font-size: 20px;
+    }
+    #c-links h1{
+        font-size: 30px;
+    }
+    #inner-link{
+        text-align: center;
+        align-items: center;
+    }
+    #inner-link img{
+        height: 15px;
+        width: 20px;
+    }
+    #inner-link a{
+        font-size: 20px;
+    }
+    #info{
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #info input, #info textarea{
+        width: 100%;
+    }
+    #footer{
+        position: relative;
+        height: 40vh;
+        justify-content: end;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #submit{
+        width:70%;
+    }
+}
+@media screen and (max-height:1000px ) {
+    #container{
+        margin-top: 40vh;
+    }
+    #footer{
+        height: 50vh;
+    }
+}
+@media screen and (max-height:700px ) {
+    #container{
+        margin-top: 60vh;
+    }
+    #footer{
+        height: 100vh;
     }
 }
