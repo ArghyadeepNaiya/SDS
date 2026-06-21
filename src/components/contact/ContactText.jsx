@@ -28,7 +28,7 @@ const ContactText = () => {
     <div id='container'>
             <div id='socials'>
                 <div id='address'>
-                    <motion.h1 className='mb-5 h-20 text-4xl text-amber-400 text-left'
+                    <motion.h1 className='mb-5 h-20 text-4xl text-amber-400 text-left font-bold'
                     initial={{opacity:0}}
                     whileInView={{opacity:1}}
                     transition={{ease:"circleOut",duration:1.5}}>
@@ -41,7 +41,7 @@ const ContactText = () => {
                     
                 </div>
                 <div id='c-links'>
-                    <motion.h1 className='mb-5 h-20 text-4xl text-amber-400'
+                    <motion.h1 className='mb-5 h-20 text-4xl text-amber-400 font-bold' 
                     initial={{opacity:0}}
                     whileInView={{opacity:1}}
                     transition={{ease:"circleOut",duration:1.5}}>Follow Us</motion.h1>

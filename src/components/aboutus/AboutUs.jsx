@@ -25,7 +25,7 @@ const AboutUs = () => {
             items-start w-full max-w-7xl mx-auto gap-10 px-10 my-10'
             >
                 <div className='flex flex-col flex-1'>
-                    <motion.h3 className='text-amber-400 text-4xl'
+                    <motion.h3 className='font-bold text-amber-400 text-4xl'
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ ease: "easeIn", duration: 1 }}>
@@ -48,7 +48,7 @@ const AboutUs = () => {
                     whileInView={{ opacity: 1, height: 400, width: 2, border: "none" }}
                     transition={{ ease: "easeOut", duration: 1.5 }}></motion.hr>
                 <div className='flex flex-col flex-1'>
-                    <motion.h3 className='text-amber-400 text-4xl'
+                    <motion.h3 className='text-amber-400 text-4xl font-bold'
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ ease: "easeIn", duration: 1 }}>
@@ -79,7 +79,7 @@ const AboutUs = () => {
             </AboutUsText>
             <div className='relative top-30 h-150 flex flex-col md:flex-row justify-center items-start w-full max-w-7xl mx-auto gap-10 px-10 my-10'>
                 <div className='flex flex-col flex-1'>
-                    <motion.h3 className='text-amber-400 text-4xl'
+                    <motion.h3 className='text-amber-400 text-4xl font-bold'
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ ease: "easeIn", duration: 1 }}>
@@ -97,7 +97,7 @@ const AboutUs = () => {
                     whileInView={{ opacity: 1, height: 400, width: 2, border: "none" }}
                     transition={{ ease: "easeOut", duration: 1.5 }}></motion.hr>
                 <div className='flex flex-col flex-1'>
-                    <motion.h3 className='text-amber-400 text-4xl'
+                    <motion.h3 className='text-amber-400 text-4xl font-bold'
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ ease: "easeIn", duration: 1 }}>
@@ -115,7 +115,7 @@ const AboutUs = () => {
                     whileInView={{ opacity: 1, height: 400, width: 2, border: "none" }}
                     transition={{ ease: "easeOut", duration: 1.5 }}></motion.hr>
                 <div className='flex flex-col flex-1'>
-                    <motion.h3 className='text-amber-400 text-4xl'
+                    <motion.h3 className='text-amber-400 text-4xl font-bold'
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ ease: "easeIn", duration: 1 }}>
