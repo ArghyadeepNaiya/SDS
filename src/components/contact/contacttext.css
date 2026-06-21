@@ -6,7 +6,7 @@
     text-align: center;
     justify-content: space-between;
     padding: 20vh;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #socials{
@@ -122,12 +122,11 @@
 
 #footer{
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 40px 80px;
 }
 #legal{
     display: flex;
@@ -148,10 +147,10 @@
 @media screen and (max-width: 1300px) {
     #container{
         position: relative;
-        margin-top: 20vh;
-        height: 100vh;
+        margin-top: 80px;
+        min-height: auto;
         flex-direction: column;
-        padding: 10vh;
+        padding: 40px 20px;
     }
     #socials{
         height: auto;
@@ -187,33 +186,33 @@
     }
     #footer{
         position: relative;
-        height: 40vh;
-        justify-content: end;
+        height: auto;
+        justify-content: center;
         flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 30px 20px;
+        gap: 10px;
     }
 }
 @media screen and (max-width: 400px) {
     #container{
         position: relative;
-        margin-top: 30vh;
-        height: 100vh;
+        margin-top: 80px;
+        min-height: auto;
         flex-direction: column;
-        padding: 10vh;
+        padding: 30px 15px;
     }
     #socials{
         height: auto;
     }
     #address h1{
-        font-size: 30px;
-        margin-bottom: 20px;
+        font-size: 24px;
+        margin-bottom: 15px;
     }
     #address p{
-        font-size: 20px;
+        font-size: 16px;
     }
     #c-links h1{
-        font-size: 30px;
+        font-size: 24px;
     }
     #inner-link{
         text-align: center;
@@ -224,7 +223,7 @@
         width: 20px;
     }
     #inner-link a{
-        font-size: 20px;
+        font-size: 16px;
     }
     #info{
         height: auto;
@@ -234,31 +233,7 @@
     #info input, #info textarea{
         width: 100%;
     }
-    #footer{
-        position: relative;
-        height: 40vh;
-        justify-content: end;
-        flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
     #submit{
-        width:70%;
-    }
-}
-@media screen and (max-height:1000px ) {
-    #container{
-        margin-top: 40vh;
-    }
-    #footer{
-        height: 50vh;
-    }
-}
-@media screen and (max-height:700px ) {
-    #container{
-        margin-top: 60vh;
-    }
-    #footer{
-        height: 100vh;
+        width: 70%;
     }
 }
