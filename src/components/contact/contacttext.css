@@ -137,3 +137,30 @@
 #icons li a #icon{
     cursor:pointer;
 }
+@media screen and (max-width: 1300px) {
+    #container{
+        margin-top: 80px;
+        height: auto;
+        flex-direction: column;
+        padding: 10vh;
+    }
+    #socials{
+        height: auto;
+    }
+    #info{
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #info input, #info textarea{
+        width: 100%;
+    }
+    #footer{
+        position: relative;
+        height: 40vh;
+        justify-content: end;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
