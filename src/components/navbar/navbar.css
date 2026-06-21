@@ -6,6 +6,8 @@
     align-items: center;
     text-align: center;
     gap: 0px;
+    text-decoration: none;
+    color: inherit;
 }
 #logo img{
     position: relative;

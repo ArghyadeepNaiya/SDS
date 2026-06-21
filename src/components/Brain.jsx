@@ -24,7 +24,7 @@ export function Brain(props) {
   return (
     <group ref={group} {...props} dispose={null}
     rotation={[Math.PI / 2, -0.2, 2.2]}
-            scale={props.scale || 0.02}
+            scale={props.scale || 0.015}
             position={props.position || [1.5,2,0]}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>

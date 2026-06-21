@@ -10,18 +10,18 @@ const Navbar = () => {
     
   return (
     <div id="navbar">
-        <div id='logo'>
-            <img src={logo} height="60px" width="60px"></img>
-            <h2 id='title'>SDS</h2>
-        </div>
+        <Link to='/' id='logo'>
+            <img src={logo} height="80px" width="80px"></img>
+            <h2 className='text-3xl' id='title'>SDS</h2>
+        </Link>
         
         
         
         <ul id="links" className={toggle ? "active" : ""}>
-            <li><Link to='/'>Home</Link></li>
-            <li><a href='#about'>About Us</a></li>
+            {/* <li><Link to='/'>Home</Link></li> */}
+            <li><Link to='/#about'>About Us</Link></li>
             <li><Link to='/resources'>Resources</Link></li>
-            <li><a href='#contact'>Contact</a></li>
+            <li><Link to='/#contact'>Contact</Link></li>
         </ul>
         
         <button onClick={() => setToggle(!toggle)} id='toggle'>

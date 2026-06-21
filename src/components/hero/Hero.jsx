@@ -19,7 +19,7 @@ const Hero = () => {
         }}>
             <Canvas camera={{position:[0,1,3]}}>
                 <Float>
-                    <Brain scale={isMobile && 0.015} 
+                    <Brain scale={isMobile && 0.01} 
                 position={isMobile && [0,-1.2,0]}>
 
                 </Brain>
@@ -37,7 +37,7 @@ function Rig(){
             state.mouse.x/10,
             1.2+state.mouse.y/10,
             3,
-        ],0.2,delta)
+        ],0.0000001,delta)
     })
 }
 
