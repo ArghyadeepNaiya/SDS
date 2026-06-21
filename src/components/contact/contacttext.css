@@ -134,6 +134,6 @@
     flex-direction: row;
     gap: 20px;
 }
-#icons li a img{
+#icons li a #icon{
     cursor:pointer;
 }
