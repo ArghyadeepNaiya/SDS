@@ -4,8 +4,27 @@ import gitIcon from '../../assets/icons/github.svg'
 import linkedinIcon from '../../assets/icons/linkedin.svg'
 import instaIcon from '../../assets/icons/instagram.svg'
 import {motion} from 'motion/react'
+import { useState } from 'react';
+import {mailKey} from '../../../key.js'
+
 
 const ContactText = () => {
+   
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", mailKey);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+    setResult(data.success ? "Success!" : "Error");
+  };
+
   return (<>
     <div id='container'>
             <div id='socials'>
@@ -62,7 +81,7 @@ const ContactText = () => {
 
         </div>
         
-        <form className='text-white' id='info'>
+        <form className='text-white' id='info' onSubmit={onSubmit}>
             <motion.h1 className='text-amber-400 text-4xl' id='title'
         initial={{opacity:0}}
         whileInView={{opacity:1}}
@@ -71,17 +90,17 @@ const ContactText = () => {
         </motion.h1>
             <div id='#info-box'>
                 <label className='text-neutral-400' id='msg'>Enter Your Full Name</label>
-                <input type='text' className='text-white' placeholder='Your Name' required></input>
+                <input type='text' className='text-white' placeholder='Your Name' name='name' required></input>
             </div>
             
             <div id='#info-box'>
                 <label className='text-neutral-400'>Enter Your Email Address</label>
-                <input type='email' className='text-white' placeholder='E-mail'></input>
+                <input type='email' className='text-white' name='email' placeholder='E-mail' required></input>
             </div>
             
             <div id='#info-box'>
                 <label className='text-neutral-400'>Enter Your Message</label>
-                <textarea type='textbox' className='text-white' placeholder='More information'></textarea>
+                <textarea type='textbox' className='text-white' placeholder='More information' name='message'></textarea>
             </div>
             
             <button type='submit' id='submit'>Submit</button>
