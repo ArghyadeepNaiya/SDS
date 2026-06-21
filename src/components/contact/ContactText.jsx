@@ -5,7 +5,6 @@ import linkedinIcon from '../../assets/icons/linkedin.svg'
 import instaIcon from '../../assets/icons/instagram.svg'
 import {motion} from 'motion/react'
 import { useState } from 'react';
-import {mailKey} from '../../../key.js'
 
 
 const ContactText = () => {
@@ -14,7 +13,7 @@ const ContactText = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
-    formData.append("access_key", mailKey);
+    formData.append("access_key","1f8f118c-fad3-49d9-b7bd-908313667d60");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
