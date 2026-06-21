@@ -5,6 +5,11 @@ import { backOut, motion } from 'motion/react'
 const AboutUs = () => {
     return (
         <div className='flex flex-col items-center justify-center w-full py-20'>
+            <motion.hr className='hr' id='top'
+                initial={{ opacity: 0, height: 0, width: 0, border: "none" }}
+                whileInView={{ opacity: 1, height: 2, width: "80%", border: "none" }}
+                transition={{ ease: "easeOut", duration: 1.5 }}
+            ></motion.hr>
             <motion.h1 className='flex justify-center
              text-4xl text-white'
                 initial={{ opacity: 0, y: 40, backgroundColor: "none", }}

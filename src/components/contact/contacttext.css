@@ -8,6 +8,34 @@
     padding: 20vh;
     height: 100vh;
 }
+
+#socials{
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-size: 20;
+    padding: 20px;
+    height: 50vh;
+}
+#c-links{
+    display: flex;
+    flex-direction: column;
+}
+
+#c-link{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+}
+#inner-link{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#inner-link img{
+    background: #a1a1a1;
+}
 #info{
     width: 40vh;
 }

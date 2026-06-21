@@ -8,12 +8,57 @@ import {motion} from 'motion/react'
 const ContactText = () => {
   return (<>
     <div id='container'>
-        <div id='contact'>
-            <a href=''>E-mail Us From here</a>
             <div id='socials'>
-                <div id='address'></div>
-                <div id='links'></div>
-            </div>
+                <div id='address'>
+                    <motion.h1 className='mb-5 h-20 text-4xl text-amber-400 text-left'
+                    initial={{opacity:0}}
+                    whileInView={{opacity:1}}
+                    transition={{ease:"circleOut",duration:1.5}}>
+                        Where to find us</motion.h1>
+                    <p className='text-3xl text-neutral-400 text-left'>
+                        Birla Institute of Technology,<br/>
+                        Mesra Ranchi, JH <br/>
+                        835215, India 
+                    </p>
+                    
+                </div>
+                <div id='c-links'>
+                    <motion.h1 className='mb-5 h-20 text-4xl text-amber-400'
+                    initial={{opacity:0}}
+                    whileInView={{opacity:1}}
+                    transition={{ease:"circleOut",duration:1.5}}>Follow Us</motion.h1>
+                    <div
+                    id='c-link'>
+                        <div id='inner-link'>
+                            <img src={gitIcon} height="25px" width="40px"></img><motion.a 
+                            href='https://github.com/SDS-Society-for-Data-Science-BIT-Mesra'
+                            className='text-2xl text-neutral-400'
+                            style={{color:"#a1a1a1"}}
+                            whileHover={{color:"rgb(218,171,0)"}}
+                            transition={{ease:"circIn",duration:0.1}}>GitHub</motion.a>
+                        </div>
+                        
+                        <div id='inner-link'>
+                            <img src={linkedinIcon} height="25px" width="40px"></img><motion.a 
+                            href='https://in.linkedin.com/company/society-for-data-science-bit-mesra'
+                            className='text-2xl text-neutral-400'
+                            style={{color:"#a1a1a1"}}
+                            whileHover={{color:"rgb(218,171,0)"}}
+                            transition={{ease:"circIn",duration:0.1}}>LinkedIn</motion.a>
+                        </div>
+
+                        <div id='inner-link'>
+                            <img src={instaIcon} height="25px" width="35px"></img><motion.a 
+                            href='https://www.instagram.com/sds.bitm/'
+                            className='text-2xl text-neutral-400'
+                            style={{color:"#a1a1a1"}}
+                            whileHover={{color:"rgb(218,171,0)"}}
+                            transition={{ease:"circIn",duration:0.1}}>Instagram</motion.a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
 
         </div>
         
@@ -46,16 +91,19 @@ const ContactText = () => {
 
             
             <ul id='icons' className='text-neutral-400'>
-                <li><a><motion.img src={gitIcon} width="20" height="20" id='icon'
+                <li><a href='https://github.com/SDS-Society-for-Data-Science-BIT-Mesra'>
+                <motion.img src={gitIcon} width="20" height="20" id='icon'
                 style={{background:"#a1a1a1"}}
                 whileHover={{background:"rgb(218,171,0)"}}
                 transition={{ease:"circIn",duration:0.1}}
                 ></motion.img></a></li>
-                <li><a><motion.img src={linkedinIcon} width="20" height="20" id='icon' 
+                <li><a href='https://in.linkedin.com/company/society-for-data-science-bit-mesra'>
+                <motion.img src={linkedinIcon} width="20" height="20" id='icon' 
                 style={{background:"#a1a1a1"}}
                 whileHover={{background:"rgb(218,171,0)"}}
                 transition={{ease:"circIn",duration:0.1}}></motion.img></a></li>
-                <li><a><motion.img src={instaIcon} width="20" height="20" id='icon' 
+                <li><a href='https://www.instagram.com/sds.bitm/'>
+                <motion.img src={instaIcon} width="20" height="20" id='icon' 
                 style={{background:"#a1a1a1"}}
                 whileHover={{background:"rgb(218,171,0)"}}
                 transition={{ease:"circIn",duration:0.1}}></motion.img></a></li>
