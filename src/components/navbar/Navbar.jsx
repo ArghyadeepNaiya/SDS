@@ -2,13 +2,18 @@ import React, { useState } from 'react'
 import './navbar.css'
 import menuImg from '../../assets/menu.svg'
 import closeImg from '../../assets/close.svg'
+import logo from '../../assets/twinPeaks-removebg-preview.png'
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
     
   return (
     <div id="navbar">
-        <h2 id='title'>SDS</h2>
+        <div id='logo'>
+            <img src={logo} height="60px" width="60px"></img>
+            <h2 id='title'>SDS</h2>
+        </div>
+        
         
         {/* We add an 'active' class when toggle is true */}
         <ul id="links" className={toggle ? "active" : ""}>
