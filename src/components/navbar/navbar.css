@@ -100,6 +100,7 @@
 
 @media (max-width: 748px) {
     #navbar {
+        position:sticky;
         flex-direction: column;
         align-items: flex-start;
         padding: 10px 15px;
@@ -118,8 +119,9 @@
     #toggle {
         display: block; /* Show button on mobile */
         position: absolute;
-        top: 15px;
+        top: 9vh;
         right: 20px;
+        transform: translate(0, -50%);
     }
 
     #links {
