@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router'
 import './navbar.css'
 import menuImg from '../../assets/menu.svg'
 import closeImg from '../../assets/close.svg'
@@ -17,9 +18,9 @@ const Navbar = () => {
         
         {/* We add an 'active' class when toggle is true */}
         <ul id="links" className={toggle ? "active" : ""}>
-            <li><a href=''>Home</a></li>
+            <li><Link to='/'>Home</Link></li>
             <li><a href='#about'>About Us</a></li>
-            <li><a href='#projects'>Projects</a></li>
+            <li><Link to='/resources'>Resources</Link></li>
             <li><a href='#contact'>Contact</a></li>
         </ul>
         
