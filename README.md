@@ -1,18 +1,45 @@
-# React + Vite
+# SDS (Student Data Science Community)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and interactive web application built to represent our data science community. It features beautiful UI with 3D interactions, smooth scrolling, and an organized resources library.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is built using modern web development tools:
+- **React 19** - UI Library
+- **Vite** - Fast frontend build tool
+- **React Router** - For client-side routing
+- **Tailwind CSS & Vanilla CSS** - For styling, responsive design, and glassmorphism UI
+- **Framer Motion** - For fluid page animations and hover effects
+- **Three.js & React Three Fiber/Drei** - For the interactive 3D Brain Hologram canvas
 
-## React Compiler
+## 📁 File & Folder Structure
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+SDS/
+├── public/                     # Static assets that don't need compilation
+│   ├── brain_hologram.glb      # 3D model for the interactive brain canvas
+│   └── mask.svg                # SVG mask used for the hover effect text
+├── src/                        # Source code
+│   ├── assets/                 # Image and SVG assets
+│   │   ├── icons/              # Social and miscellaneous icons
+│   │   ├── close.svg           # Mobile menu close icon
+│   │   ├── menu.svg            # Mobile menu hamburger icon
+│   │   └── twinPeaks-removebg.png # Main SDS Logo
+│   ├── components/             # Reusable React components
+│   │   ├── Brain.jsx           # Renders the 3D model with R3F
+│   │   ├── FlipWords.jsx       # Animated typography component
+│   │   ├── aboutus/            # About Us section component & styling
+│   │   ├── contact/            # Contact Us/Footer section component & styling
+│   │   ├── hero/               # Landing page Hero section with 3D background
+│   │   └── navbar/             # Responsive Navbar component
+│   ├── routes/                 # Pages managed by React Router
+│   │   ├── Resources.jsx       # Downloadable resources library page
+│   │   └── resources.css       # Resources page styling
+│   ├── App.jsx                 # Main application layout component
+│   ├── index.css               # Global CSS and Tailwind directives
+│   └── main.jsx                # React DOM entry point and Router provider
+├── .gitignore                  # Files and folders ignored by Git
+├── eslint.config.js            # Linter configuration
+├── index.html                  # Main HTML entry point
+├── package.json                # Project dependencies and scripts
+└── vite.config.js              # Vite configuration
